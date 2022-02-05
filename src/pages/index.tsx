@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 import Header from "../components/header";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       </Head>
       <Header />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
