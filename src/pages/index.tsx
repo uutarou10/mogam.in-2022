@@ -6,9 +6,9 @@ const Home = () => {
       <Head>
         <title>top</title>
       </Head>
-      <div>
+      <h1 className="text-5xl text-amber-500">
         my portfolio
-      </div>
+      </h1>
     </>
   )
 }
