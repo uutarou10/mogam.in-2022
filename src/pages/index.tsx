@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from "../components/header";
 
 const Home = () => {
   return (
@@ -6,9 +7,7 @@ const Home = () => {
       <Head>
         <title>top</title>
       </Head>
-      <h1 className="text-5xl text-amber-500">
-        my portfolio
-      </h1>
+      <Header />
     </>
   )
 }
