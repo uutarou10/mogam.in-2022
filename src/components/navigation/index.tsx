@@ -18,7 +18,7 @@ const NavigationItem: React.FC<{navigationItem: NavigationItem}> = ({navigationI
 
   return (
     <li className={className}>
-      <a><Link href={linkTo}>{label}</Link></a>
+      <Link href={linkTo}><a className={'no-underline'}>{label}</a></Link>
     </li>
   )
 }
@@ -26,7 +26,7 @@ const NavigationItem: React.FC<{navigationItem: NavigationItem}> = ({navigationI
 const Navigation: React.FC<Props> = ({items}) => {
   return (
     <nav>
-      <ul className={'flex flex-row gap-x-8 overflow-x-scroll'}>
+      <ul className={'flex flex-row gap-x-8 overflow-x-scroll list-none'}>
         {items.map((item, i) => <NavigationItem key={i} navigationItem={item} />)}
       </ul>
     </nav>

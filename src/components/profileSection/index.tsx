@@ -8,7 +8,7 @@ type Props = {
 
 const ProfileSection: React.FC<Props> = ({children, heading}) => {
   return (
-    <section className={'flex flex-col gap-y-8'}>
+    <section className={'flex flex-col gap-y-6'}>
       <SectionHeading>{heading}</SectionHeading>
       <div>
         {children}

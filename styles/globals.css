@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    ul {
+        @apply list-disc list-inside;
+    }
+
+    a {
+       @apply underline transition-colors hover:text-gray-400;
+    }
+}
