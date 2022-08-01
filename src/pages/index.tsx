@@ -33,11 +33,11 @@ const Home: NextPage = () => {
         </ProfileSection>
         <ProfileSection heading={'リンク'}>
           <ul>
-            <li><Link href={'https://note.com/mogamin3'} target={"_blank"} rel={'noreferrer noopenner'}><a>note</a></Link></li>
-            <li><Link href={'https://github.com/uutarou10'} target={"_blank"} rel={'noreferrer noopenner'}><a>GitHub</a></Link></li>
-            <li><Link href={'https://twitter.com/mogamin3'} target={"_blank"} rel={'noreferrer noopenner'}><a>Twitter</a></Link></li>
-            <li><Link href={'https://zenn.dev/mogamin'} target={"_blank"} rel={'noreferrer noopenner'}><a>Zenn</a></Link></li>
-            <li><Link href={'https://speakerdeck.com/uutarou10'} target={"_blank"} rel={'noreferrer noopenner'}><a>Speaker Deck</a></Link></li>
+            <li><Link href={'https://note.com/mogamin3'}><a target={"_blank"} rel={'noreferrer noopenner'}>note</a></Link></li>
+            <li><Link href={'https://github.com/uutarou10'}><a target={"_blank"} rel={'noreferrer noopenner'}>GitHub</a></Link></li>
+            <li><Link href={'https://twitter.com/mogamin3'}><a target={"_blank"} rel={'noreferrer noopenner'}>Twitter</a></Link></li>
+            <li><Link href={'https://zenn.dev/mogamin'}><a target={"_blank"} rel={'noreferrer noopenner'}>Zenn</a></Link></li>
+            <li><Link href={'https://speakerdeck.com/uutarou10'}><a target={"_blank"} rel={'noreferrer noopenner'}>Speaker Deck</a></Link></li>
           </ul>
         </ProfileSection>
       </main>

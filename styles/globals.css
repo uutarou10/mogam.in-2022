@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        @apply dark:text-slate-100;
+    }
+
+    body {
+        @apply dark:bg-slate-900;
+    }
+
     ul {
         @apply list-disc list-inside;
     }

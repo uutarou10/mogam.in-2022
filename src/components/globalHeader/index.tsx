@@ -8,7 +8,7 @@ const GlobalHeader: React.FC = () => {
       <Image src={profileImage} alt='' className={'rounded'} layout={"fixed"} width={64} height={64}/>
       <div className={'flex flex-col'}>
         <h1 className={'font-bold text-4xl leading-tight m-0 tracking-tight'}>Kota Nonaka</h1>
-        <span>Frontend developer</span>
+        <span className={'text-gray-700 dark:text-slate-200'}>Frontend developer</span>
       </div>
     </header>
   )

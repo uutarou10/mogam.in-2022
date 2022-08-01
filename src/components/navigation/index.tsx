@@ -11,6 +11,7 @@ const NavigationItem: React.FC<{navigationItem: NavigationItem}> = ({navigationI
     return [
       isActive ? 'font-bold border-b-2' : 'text-gray-400',
       'border-b-black',
+      'dark:border-b-slate-100',
       'hover:text-black',
       'transition-colors'
     ].join(' ')
