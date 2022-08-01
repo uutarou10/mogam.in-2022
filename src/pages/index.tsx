@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
-    <div className={'flex flex-col gap-8 p-16'}>
+    <div className={'flex flex-col gap-8 p-4 md:p-16'}>
       <GlobalHeader />
       <Navigation items={[
         {label: 'About', linkTo: '/', isActive: true},
