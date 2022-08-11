@@ -20,7 +20,7 @@ const Article: React.FC<Props> = ({title, body, date, site, url}) => {
           <h2 className={'text-teal-500 truncate mb-4'}>{title}</h2>
           <div className={'text-xs truncate mb-1 leading-normal'}>{body}</div>
           <div className={'text-xs flex flex-row gap-2 text-gray-400 leading-normal'}>
-            <time dateTime={date.toISOString()}>{formattedDate}</time>
+            <time dateTime={date.toISOString()} data-testid={'time'}>{formattedDate}</time>
             <div>{site}</div>
           </div>
         </article>
