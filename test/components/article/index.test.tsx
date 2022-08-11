@@ -7,7 +7,7 @@ describe('Article', () => {
     render(<Article title={'test'} body={'test'} date={date} site={'example.com'} url={'https://example.com/sample'} />)
 
     const timeElement = await screen.findByTestId('time')
-    expect(timeElement.innerText).toBe('Dec 10th, 2021')
+    expect(timeElement.innerHTML).toBe('Dec 10th, 2021')
   })
 })
 
