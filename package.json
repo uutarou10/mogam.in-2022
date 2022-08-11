@@ -37,7 +37,7 @@
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3",
     "eslint-plugin-storybook": "^0.6.1",
-    "happy-dom": "^6.0.4",
+    "jsdom": "^20.0.0",
     "postcss": "^8.4.14",
     "storybook-addon-next": "^1.6.7",
     "tailwindcss": "^3.1.7",
