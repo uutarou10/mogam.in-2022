@@ -11,17 +11,19 @@ datasource db {
 }
 
 model Media {
-  id       Int       @id @default(autoincrement())
-  name     String
-  url      String
-  articles Article[]
+  id           Int       @id @default(autoincrement())
+  name         String
+  url          String
+  articles     Article[]
+  displayOrder Int
 }
 
 model Article {
-  id      Int     @id @default(autoincrement())
-  title   String
-  body    String?
-  media   Media   @relation(fields: [mediaId], references: [id])
-  mediaId Int
-  url     String  @unique
+  id        Int      @id @default(autoincrement())
+  title     String
+  body      String?
+  media     Media    @relation(fields: [mediaId], references: [id])
+  mediaId   Int
+  url       String   @unique
+  createdAt DateTime
 }
