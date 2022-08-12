@@ -3,6 +3,6 @@
   "baseBranch": "origin/main",
   "pipeline": {
     "dev": {},
-    "build": {}
+    "test": {}
   }
 }
