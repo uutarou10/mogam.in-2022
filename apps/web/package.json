@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@mogamin/prisma": "*",
     "@react-hook/event": "^1.2.6",
     "date-fns": "^2.29.1",
     "next": "12.2.3",

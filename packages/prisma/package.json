@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "prisma generate"
+    "build": "prisma generate",
+    "dev": "docker compose up -d && prisma studio"
   },
   "devDependencies": {
     "@types/node": "^18.7.1",
