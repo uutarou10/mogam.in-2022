@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "prisma generate",
-    "dev": "docker compose up -d && prisma studio --browser none"
+    "dev": "docker compose up -d && prisma studio --browser none",
+    "format": "prisma format"
   },
   "devDependencies": {
     "@types/node": "^18.7.1",
