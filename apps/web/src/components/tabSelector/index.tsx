@@ -1,7 +1,7 @@
 import React from 'react'
 import useEvent from '@react-hook/event'
 
-type Item = {
+export type Item = {
   label: string
   isActive: boolean
   onClick:  () => void

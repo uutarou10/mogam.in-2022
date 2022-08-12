@@ -10,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// どうやらMediaは複数形で本当はMediumが単数系らしい。やらかした。
 model Media {
   id           Int       @id @default(autoincrement())
   name         String

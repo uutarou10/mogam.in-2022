@@ -11,7 +11,6 @@ const Home: NextPage = () => {
       <Navigation items={[
         {label: 'About', linkTo: '/', isActive: true},
         {label: 'Articles', linkTo: '/articles', isActive: false},
-        {label: 'Contact', linkTo: '/contact', isActive: false}
       ]} />
       <main className={'flex flex-col gap-8'}>
         <ProfileSection heading={'経歴'}>
