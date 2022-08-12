@@ -1,0 +1,27 @@
+{
+  "name": "mogam.in",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uutarou10/mogam.in-2022.git"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uutarou10/mogam.in-2022/issues"
+  },
+  "homepage": "https://github.com/uutarou10/mogam.in-2022#readme",
+  "devDependencies": {
+    "turbo": "^1.4.3"
+  }
+}
