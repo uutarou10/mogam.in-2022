@@ -1,17 +1,19 @@
 import type { NextPage } from 'next'
-import GlobalHeader from "../components/globalHeader";
-import Navigation from "../components/navigation";
-import ProfileSection from "../components/profileSection";
-import Link from "next/link";
+import GlobalHeader from '../components/globalHeader'
+import Navigation from '../components/navigation'
+import ProfileSection from '../components/profileSection'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
     <div className={'flex flex-col gap-8 p-4 md:p-16'}>
       <GlobalHeader />
-      <Navigation items={[
-        {label: 'About', linkTo: '/', isActive: true},
-        {label: 'Articles', linkTo: '/articles', isActive: false},
-      ]} />
+      <Navigation
+        items={[
+          { label: 'About', linkTo: '/', isActive: true },
+          { label: 'Articles', linkTo: '/articles', isActive: false }
+        ]}
+      />
       <main className={'flex flex-col gap-8'}>
         <ProfileSection heading={'経歴'}>
           <ul>
@@ -27,16 +29,52 @@ const Home: NextPage = () => {
           </ul>
         </ProfileSection>
         <ProfileSection heading={'スキル・関心'}>
-          <p className={'mb-2'}>TypeScript / React / Next.jsが好き。 <br/>過去にはElm / React Nativeなどを使ったプロダクト開発の経験あり。</p>
-          <p>現在はNuxt.js / Ruby on Railsを使用したサーバーサイドアプリケーションの開発などに従事。</p>
+          <p className={'mb-2'}>
+            TypeScript / React / Next.jsが好き。 <br />
+            過去にはElm / React Nativeなどを使ったプロダクト開発の経験あり。
+          </p>
+          <p>
+            現在はNuxt.js / Ruby on
+            Railsを使用したサーバーサイドアプリケーションの開発などに従事。
+          </p>
         </ProfileSection>
         <ProfileSection heading={'リンク'}>
           <ul>
-            <li><Link href={'https://note.com/mogamin3'}><a target={"_blank"} rel={'noreferrer noopenner'}>note</a></Link></li>
-            <li><Link href={'https://github.com/uutarou10'}><a target={"_blank"} rel={'noreferrer noopenner'}>GitHub</a></Link></li>
-            <li><Link href={'https://twitter.com/mogamin3'}><a target={"_blank"} rel={'noreferrer noopenner'}>Twitter</a></Link></li>
-            <li><Link href={'https://zenn.dev/mogamin'}><a target={"_blank"} rel={'noreferrer noopenner'}>Zenn</a></Link></li>
-            <li><Link href={'https://speakerdeck.com/uutarou10'}><a target={"_blank"} rel={'noreferrer noopenner'}>Speaker Deck</a></Link></li>
+            <li>
+              <Link href={'https://note.com/mogamin3'}>
+                <a target={'_blank'} rel={'noreferrer noopenner'}>
+                  note
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://github.com/uutarou10'}>
+                <a target={'_blank'} rel={'noreferrer noopenner'}>
+                  GitHub
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://twitter.com/mogamin3'}>
+                <a target={'_blank'} rel={'noreferrer noopenner'}>
+                  Twitter
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://zenn.dev/mogamin'}>
+                <a target={'_blank'} rel={'noreferrer noopenner'}>
+                  Zenn
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://speakerdeck.com/uutarou10'}>
+                <a target={'_blank'} rel={'noreferrer noopenner'}>
+                  Speaker Deck
+                </a>
+              </Link>
+            </li>
           </ul>
         </ProfileSection>
       </main>
